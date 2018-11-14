@@ -16,5 +16,10 @@
     "@types/pg": "^7.4.11",
     "iota.lib.js": "^0.5.1",
     "pg": "^7.6.1"
+  },
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.1.6"
   }
 }
