@@ -1,5 +1,9 @@
 # IOTA Research Project
 
+
+## DHT122 sensor on Raspberry Pi
+Use [this guide](https://tutorials-raspberrypi.com/raspberry-pi-measure-humidity-temperature-dht11-dht22/) to set up the Raspberry Pi with the DHT22 temperature and humidity sensor and install the Adafruit python library for reading sensor data.
+
 ## MQTT With Authentication
 
 To produce a data stream and control its subscriptions we use the MQTT messaging protocol. The implementation is [Eclipse Mosquitto](https://projects.eclipse.org/projects/technology.mosquitto) together with [Mosquitto-auth-plug](https://github.com/jpmens/mosquitto-auth-plug) and PostgreSQL database to manage users. Follow the guide in Mosquitto-auth-plugs readme to set up.
