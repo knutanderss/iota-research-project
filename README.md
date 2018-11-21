@@ -64,7 +64,7 @@ home/USER/dev/iota-research-project/mosquitto-auth-plug/auth-plug.so
 
 ## To test it
 Make one terminal run the command: 
-`mosquitto_sub -u user1 -P password -t test/topic`
+`mosquitto_sub -u user1 -P password -t test/topic`\
 And another one run the command:
 `mosquitto_pub -u user1 -P password -t test/topic -m "Hello world"`
 
