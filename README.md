@@ -33,24 +33,28 @@ To set up the Mosquitto server with authentication follow these steps:
 `git clone https://github.com/eclipse/mosquitto.git
 git clone https://github.com/jpmens/mosquitto-auth-plug.git`
 2. Then we need to build the mosquitto broker from the source files with some dependencis installed. 
-`cd mosquitto
+```
+cd mosquitto
 sudo apt install build-essential
 sudo apt install libc-ares-dev
 sudo apt install uuid-dev 
 sudo apt install libssl-dev
 make binary
-make install`
+make install
+```
 3. Now copy the comfig.mk to mosquitto auth plug sources.
 `cp ../config.mk ../mosquitto-auth-plug/config.mk`
 4. Now install dependencis:
-`sudo apt install openssl
+```
+sudo apt install openssl
 sudo apt install libssl-dev
-sudo apt install libcurl4-openssl-dev5.` 
+sudo apt install libcurl4-openssl-dev5.
+``` 
 5. As the config file takes absolute paths you need to make sure that these paths are correct:
-
+```
 MOSQUITTO_SRC =/home/steffen/dev/iota-research-project/mosquitto
-
 OPENSSLDIR = /usr/bin
+```
 
 6. Now go back one folder with `cd ..` and edit mosquitto conf so that it points to the correct path for the file auth-plug.so.
 It's in this line, replace USER
