@@ -23,7 +23,7 @@ To set up this datebase follow these steps:
 9. Go to the the folder postgres and run teh setup.sh as sudo and enter password when pormpted
 10. Now the database is ready to go! 
 
-As for what the setup script does. It creates two tables in the database for authetication. And it creates a superuser for our raspberrie py. This user is called user1 and has password 'password'
+For now the setup script creates two tables in the database for authetication. It also creates a superuser for our raspberrie py. This user is called user1 and has password 'password'
 
 ## Mosquitto for linux based systems
 
@@ -49,6 +49,7 @@ sudo apt install libcurl4-openssl-dev5.`
 5. As the config file takes absolute paths you need to make sure that these paths are correct:
 
 MOSQUITTO_SRC =/home/steffen/dev/iota-research-project/mosquitto
+
 OPENSSLDIR = /usr/bin
 
 6. Now go back one folder with `cd ..` and edit mosquitto conf so that it points to the correct path for the file auth-plug.so.
@@ -57,12 +58,11 @@ home/USER/dev/iota-research-project/mosquitto-auth-plug/auth-plug.so
 7. Run mosquitto server with:
 `mosquitto -c /path/to/mosquitto.conf`
 
-##To test it
+## To test it
 Make one terminal run the command: 
 `mosquitto_sub -u user1 -P password -t test/topic`
 And another one run the command:
 `mosquitto_pub -u user1 -P password -t test/topic -m "Hello world"`
-
 
 ## Run `check_payment`
 
