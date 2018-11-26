@@ -13,6 +13,7 @@
     "@types/es6-promise": "^3.3.0",
     "@types/iota.lib.js": "^0.4.0",
     "@types/moment": "^2.13.0",
+    "@types/node": "^10.12.10",
     "@types/pg": "^7.4.11",
     "iota.lib.js": "^0.5.1",
     "pg": "^7.6.1"
